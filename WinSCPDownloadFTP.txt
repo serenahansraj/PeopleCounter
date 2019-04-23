@@ -1,0 +1,70 @@
+#WinSCP automatic SYNC script TEXT FILE.
+#
+#Serena Hansraj
+#April 9 2019
+#
+#This file MUST live with the sister BATCH FILE.
+#Paths of local (lcd) must be changed to work on your machine,
+#and match that of the WinSCP directories.
+#
+# How this file will work:
+# 1) The terminal (command line prompt) window will appear
+# 2) The script will then execute each of the commands and
+#    compare files between the local and remote
+# 3) The files that are missing to the local will be downloaded.
+#    Note: This will happen for EACH FOLDER listed below. Once the
+#    folder is completed, the directories will change.
+# 4) The script will exit the terminal, please confirm that all
+#    new files have been synced and nothing deleted from server.
+
+
+#If the script fails then the fail will just abort and exit the terminal
+#There will be NO ERROR MESSAGES; therefore, be sure to check syntax.
+option batch abort
+
+
+#The program will NOT show any message pop-ups asking for confirmation.
+option confirm off
+
+
+#Opens connection to server. Note: The password, username, and port number
+#are all viewable. If this code becomes public, please change this to the
+#generic:
+
+open "ftp://USERNAME:PASSWORD@HOST_OR_IP:PORT/"
+
+
+#lcd = local directory of folder where files will be downloaded.
+
+lcd "C:\Users\PeopleCounter\Data\ALL"
+
+#cd = remote server directory of folder where new files are located.
+
+cd /LymanClassrooms
+
+#Sync the local directory to match the remote, we preserve the original
+#created times, make the transfer automatic, and are only looking for any
+#files with .csv as the file type.
+
+synchronize local -preservetime -transfer=automatic -filemask="*.csv "
+
+
+cd /LymanReception
+synchronize local -preservetime -transfer=automatic -filemask="*.csv "
+
+
+cd /LymanExhibit
+synchronize local -preservetime -transfer=automatic -filemask="*.csv "
+
+
+cd /LymanWOW
+synchronize local -preservetime -transfer=automatic -filemask="*.csv "
+
+
+close
+
+
+#Once all work is done, exit the script. After this the terminal
+#window should close
+
+exit
