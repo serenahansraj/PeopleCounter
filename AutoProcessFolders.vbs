@@ -1,10 +1,11 @@
-'File name: reformatMarco.vbs
-'Written by: Serena Hansraj
-'Date: 4/9/2019
+' Filename: AutoProcessFolders.vbs
+' Written by: Serena Hansraj
+' Date: April 23, 2019
 '
-'This script is used to reformat all freshly downloaded files from
-'the people counter. Please use the comments to rewrite accordingly.
-'This script works by using the macro module already saved in excel.
+' This script is used to reformat all freshly downloaded files from
+' the people counter. Please use the comments to rewrite accordingly.
+' This script works by using the macro module already saved in excel.
+'
 ProcessFiles()
 
 Sub ProcessFiles()

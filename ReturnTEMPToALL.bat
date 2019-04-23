@@ -1,6 +1,6 @@
-:: File name: ReturnTEMPToAll.bat
+:: Filename: ReturnTEMPToAll.bat
 :: Written by: Serena Hansraj
-:: Date: April 22, 2019
+:: Date: April 23, 2019
 ::
 :: Purpose: This script returns all files from any TEMP folder their ALL folder.
 ::

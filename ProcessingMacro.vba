@@ -1,6 +1,6 @@
-' File name: ReformatMacro.vba
-' Written by Serena Hansraj
-' Date: 3/5/2019
+' Filename: ProcessingMarco.vba
+' Written by: Serena Hansraj
+' Date: April 23, 2019
 '
 ' This function will seperate date and time into seperate columns.
 ' Then it will create a sum_in column which holds the value of the totatl sum

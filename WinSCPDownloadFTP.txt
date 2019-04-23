@@ -1,11 +1,10 @@
-#WinSCP automatic SYNC script TEXT FILE.
+# Filename: winscpDownloadFTP.txt
+# Written by: Serena Hansraj
+# Date: April 23, 2019
 #
-#Serena Hansraj
-#April 9 2019
-#
-#This file MUST live with the sister BATCH FILE.
-#Paths of local (lcd) must be changed to work on your machine,
-#and match that of the WinSCP directories.
+# This file MUST live with the sister BATCH FILE.
+# Paths of local (lcd) must be changed to work on your machine,
+# and match that of the WinSCP directories.
 #
 # How this file will work:
 # 1) The terminal (command line prompt) window will appear

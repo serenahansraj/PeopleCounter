@@ -1,6 +1,6 @@
-:: File name: findNewLogs.bat
+:: Filename: MasterScript.bat
 :: Written by: Serena Hansraj
-:: Date: April 11, 2019
+:: Date: April 23, 2019
 ::
 :: Purpose: This is a master script that will check if local files are synced
 :: to remote files, will move all new files to the NEWTEMP folder, and then
@@ -28,7 +28,7 @@ For /f "tokens=2 delims=/" %%H in (theFiles.txt) Do move "C:\Users\PeopleCounter
 ::This section will call the processing vbs script to run and process all files in the TEMPNEW folder.
 ::The processed files will go into TEMPPROC.
 
-"C:\Users\GitHub\appMacroFolder\AutoFoldReform.vbs"
+"C:\Users\GitHub\appMacroFolder\AutoProcessFolders.vbs"
 
 :: This is where the connector would live.
 :: Following the connector, the code from ReturnTEMPToAll should be added.
