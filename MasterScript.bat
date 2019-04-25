@@ -18,7 +18,7 @@
 ::The log file is created by WinSCP. The allNewFiles.txt keeps the list of the new files
 ::and it is overwritten everytime the folders are synced.
 
-findstr "new" "C:\Users\AppData\Local\Temp\CountBoxLogs\countbox1@bg-base.smith.edu.log" > allNewFiles.txt
+findstr "new" "C:\Users\AppData\Local\Temp\CountBoxLogs\winscpserver.log" > allNewFiles.txt
 
 findstr "Remote" "C:\Users\GitHub\FTPAutoDownload\allNewFiles.txt" > newFiles.txt
 
