@@ -16,19 +16,19 @@ Finally, you need to enable logging in WinSCP and specify where you'd like your 
 
 ### Before you run, fix pathnames!
 
-AutoProcessFolders.vbs
+AutoProcessFolders.vbs | 
 Lines: 34, 48
 
-MasterScript.bat
+MasterScript.bat | 
 Lines: 15, 21, 23, 26, 31
 
-ProcessingMacro.vba
+ProcessingMacro.vba | 
 Lines: 60, 61
 
-ReturnTEMPToALL.bat
+ReturnTEMPToALL.bat | 
 Lines: 10, 12, 14, 16, 18
 
-WinSCPDownloadFTP.txt
+WinSCPDownloadFTP.txt | 
 Lines: 38
 
 ## How to Run
